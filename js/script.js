@@ -7,6 +7,10 @@ $button.on("click", () =>{
     $.ajax({
         url: `https://www.googleapis.com/books/v1/volumes?q=${bookTitle}:keyes&${APIKEY}`
     }).then((data) => {
-        console.log(data)
+        let items = $(data.items)
+        let volumeInfo = $(data.volumeInfo)
+        let title = $(data.title)
+        for(let i = 0; i < items.length; i++)
+        console.log(items[i].volumeInfo.title)
     })
 })
