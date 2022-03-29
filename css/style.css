@@ -1,3 +1,13 @@
-body {
-    background: url(https://imgur.com/a/1iujyGX);
+html, body {
+    height: 100%;
   }
+body {
+    margin: 0;
+    background-image: url(https://media.istockphoto.com/photos/stack-of-colorful-books-education-background-back-to-school-book-picture-id690358116?k=20&m=690358116&s=170667a&w=0&h=nUxaOtHubGfrd_kTtszsqX8Mx2Qr3OXn94a-u2n4nXM=);
+    background-size: cover; 
+    /* background-size: 100% 100%; */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-blend-mode: color;
+    /* backdrop-filter: blur(3px); */
+}

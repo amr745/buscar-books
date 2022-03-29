@@ -18,7 +18,7 @@ $button.on("click", () =>{
         
         for(let i = 0; i < items.length; i++) {
             books.push(items[i])
-            console.log(books)
+            // console.log(books)
             const $ul = $("ul")
             let $li = $("<li>")
             $li.text(items[i].volumeInfo.title)
