@@ -38,6 +38,7 @@ header{
 h1 {
   font-family: 'Cedarville Cursive', cursive;
   font-size: 50pt;
+  display: flex;
   /* margin: 0px 0px 0px 0px; */
   margin: 0px 0px 0px 0px;
   border: transparent;
@@ -183,14 +184,8 @@ aside{
   margin: 20px
 }
 
-@media (min-width: 850px){
-
-}
-
-@media (max-width: 770px){
-  /*set your element sizes for device that size*/
-}
-
 @media (max-width: 450px){
-  /*set your element sizes for device that size*/
+  h1{
+  font-size: 30pt;
+  }
 }
