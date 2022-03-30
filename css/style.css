@@ -184,8 +184,11 @@ aside{
   margin: 20px
 }
 
-@media (max-width: 450px){
+@media (max-width: 500px){
   h1{
   font-size: 30pt;
+  }
+  h2{
+    font-size: 15pt
   }
 }
