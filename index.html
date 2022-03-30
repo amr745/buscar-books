@@ -1,31 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:wght@700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+    </style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script
-  src="https://code.jquery.com/jquery-3.6.0.js"
-  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-  crossorigin="anonymous"></script>
-  <script defer src="./js/script.js" defer></script>
-  <link rel="stylesheet" href="./css/style.css">
-  
-  <title>Buscar Books</title>
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+    <script defer src="./js/script.js" defer></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Buscar Books</title>
 </head>
 <body>
-    <input id = "textBox" type = "text" placeholder = "Book Title" value = "of mice and men">
-    <button>Get Book Info</button>
+    <h1>Buscar Books</h1>
+    <div class = "h2Box"><h2>Find Your Next Adventure</h2></div>
+    <div class = "userIn">
+       <div class = "inBox" ><input id = "textBox" type = "text" placeholder = "Book Title"></div>
+        <div clas = "butBox"><button>Find Book</button></div>
+    </div>
     <div id = "bookContainer">
         <ul></ul>
     </div>
     <div id="box">
         <p id="title1"></p>
+        <aside></aside>
         <p id="author"></p>
         <p id="summary"></p>
-        <aside>
-
-        </aside>
 
     </div>
 </body>

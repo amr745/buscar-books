@@ -2,12 +2,82 @@ html, body {
     height: 100%;
   }
 body {
-    margin: 0;
-    background-image: url(https://media.istockphoto.com/photos/stack-of-colorful-books-education-background-back-to-school-book-picture-id690358116?k=20&m=690358116&s=170667a&w=0&h=nUxaOtHubGfrd_kTtszsqX8Mx2Qr3OXn94a-u2n4nXM=);
-    background-size: cover; 
-    /* background-size: 100% 100%; */
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-blend-mode: color;
-    /* backdrop-filter: blur(3px); */
+  font-family: 'Gentium Book Basic', serif;
+  color: blueviolet;
+  background-image: url(https://media.istockphoto.com/photos/stack-of-colorful-books-education-background-back-to-school-book-picture-id690358116?k=20&m=690358116&s=170667a&w=0&h=nUxaOtHubGfrd_kTtszsqX8Mx2Qr3OXn94a-u2n4nXM=);
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-blend-mode: color;
+  margin: 0px;
+  border: 0px;
+  padding: 0px;
+  /* width: 100px; */
+  /* height: 40px; */
+}
+
+h1 {
+  font-family: 'Cedarville Cursive', cursive;
+  font-size: 50pt;
+  text-align: center;
+  position:relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0px 50px 0px 50px;
+  border: 0px 50px 0px 50px;
+  padding: 0px 50px 0px 50px;}
+
+.h2Box {
+  position:relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex: 0 1 auto;
+  color: coral;
+  /* top: 10px */
+  margin: 0px 50px 0px 50px;
+  border: 0px 50px 0px 50px;
+  padding: 0px 50px 0px 50px;
+  /* width: 100px; */
+  height: 40px;
+}
+
+.userIn {
+  position:relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0px 50px 50px 50px;
+  border: 0px 50px 50px 50px;
+  padding: 0px 50px 50px 50px;
+  height: 40px;
+}
+
+input {
+  /* flex: 0 1 auto; */
+  width: 75%;
+  padding: 12px 20px;
+  /* margin: 8px 0; */
+  box-sizing: content-box;
+  border: 2px solid coral;
+  border-radius: 25px;
+  /* background-color: lightgray; */
+  color:  blueviolet;
+  /* transition: width 0.4s ease-in-out; */
+  background: transparent; 
+}
+
+.butBox {
+  /* flex: 0 1 auto; */
+  /* float: right; */
 }
