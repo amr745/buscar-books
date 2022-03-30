@@ -3,76 +3,97 @@ html, body {
   }
 body {
   font-family: 'Gentium Book Basic', serif;
-  color: blueviolet;
-  background-image: url(https://media.istockphoto.com/photos/stack-of-colorful-books-education-background-back-to-school-book-picture-id690358116?k=20&m=690358116&s=170667a&w=0&h=nUxaOtHubGfrd_kTtszsqX8Mx2Qr3OXn94a-u2n4nXM=);
-  background-size: cover; 
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-blend-mode: color;
+  color: white;
+  background-color: rgb(20, 17, 17);
   margin: 0px;
   border: 0px;
   padding: 0px;
+  position: relative;
+}
+
+header{
+  background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(https://media.istockphoto.com/photos/stack-of-colorful-books-education-background-back-to-school-book-picture-id690358116?k=20&m=690358116&s=170667a&w=0&h=nUxaOtHubGfrd_kTtszsqX8Mx2Qr3OXn94a-u2n4nXM=);
+  background-size: cover; 
+  height: 100vh;
+  /* text-align: center; */
+  /* position:relative; */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  /* margin: 0px 50px 0px 50px;
+  border: 0px 50px 0px 50px;
+  padding: 0px 50px 0px 50px; */
+  /* border: transparent; */
+  /* height: 500px; */
 }
 
 h1 {
   font-family: 'Cedarville Cursive', cursive;
   font-size: 50pt;
-  text-align: center;
-  position:relative;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  margin: 0px 50px 0px 50px;
-  border: 0px 50px 0px 50px;
-  padding: 0px 50px 0px 50px;}
+  /* margin: 0px 0px 0px 0px; */
+  margin: 0px 0px 0px 0px;
+  border: transparent;
+  /* height: 100px; */
+  /* display: flex; */
+  /* align-items: center; */
+}
 
-.h2Box {
-  position:relative;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  flex: 0 1 auto;
-  color: coral;
-  margin: 0px 50px 0px 50px;
-  border: 0px 50px 0px 50px;
-  padding: 0px 50px 0px 50px;
-  height: 40px;
+h2 {
+  /* position:relative; */
+  /* display: flex; */
+  /* flex-direction: row; */
+  /* flex-wrap: wrap; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* align-content: center; */
+  /* flex: 0 1 auto; */
+  /* color: coral; */
+  /* margin: 0px 300px 0px 450px; */
+  border: transparent;
+  /* padding: 0px; */
+  /* height: 50px; */
+  /* border: solid red; */
+  margin: 0px 0px 0px 0px;
 }
 
 .userIn {
-  position:relative;
+  /* position:relative; */
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+  /* flex-direction: row; */
+  /* flex-wrap: wrap; */
+  /* justify-content: center; */
   align-items: center;
-  align-content: center;
-  margin: 0px 50px 50px 50px;
-  border: 0px 50px 50px 50px;
-  padding: 0px 50px 50px 50px;
-  height: 40px;
+  /* align-content: center; */
+  /* margin: 0px 50px 0px 50px; */
+  /* border: 0px 50px 0px 50px; */
+  /* padding: 0px 50px 0px 50px; */
+  /* height: 40px; */
+  /* border: transparent; */
 }
 
 #textBox {
   width: 75%;
   padding: 5px 20px;
   box-sizing: content-box;
-  border: 2px solid coral;
+  border: 2px white;
   border-radius: 25px;
-  color:  blueviolet;
-  background: transparent; 
+  color:  black;
+  /* background: transparent; */
+
 }
 
 button {
-  border: 2px solid coral;
-  color:  blueviolet;
-  background: transparent
+  border: gray;
+  color:  black;
+  /* background: transparent */
 }
 
 button:hover {
@@ -81,19 +102,18 @@ button:hover {
 }
 
 #bookContainer{
-  position:relative;
+  position: relative;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   align-content: center;
-  margin: 50px 50px 50px 50px;
-  border: 50px 50px 50px 50px;
-  padding: 50px 50px 50px 50px;
-  height: 45px;
-  /* width: 50pt; */
-
+  border: transparent;
+  /* margin: 0px 0px 0px 0px;
+  padding: 0px; */
+  border: transparent;
+  /* width: 300px; */
 }
 
 li{
@@ -101,10 +121,76 @@ li{
 }
 
 li::before {
-  content: "📚";;
+  content: "📚 ";
 }
 
 li:hover {
   background-color: gray;
   color: white;
+}
+
+#box{
+  background-color: black;
+}
+
+#title1{
+  font-size: 25pt;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  border: transparent;
+  padding: 0px;
+  margin: 0px;;
+  /* height: 40px; */
+}
+
+aside{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  border: transparent;
+  /* margin: 40px 950px 0px 0px;; */
+}
+
+#author{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  border: transparent;
+}
+
+#summary{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  border: transparent;
+  margin: 20px
+}
+
+@media (min-width: 850px){
+
+}
+
+@media (max-width: 770px){
+  /*set your element sizes for device that size*/
+}
+
+@media (max-width: 450px){
+  /*set your element sizes for device that size*/
 }

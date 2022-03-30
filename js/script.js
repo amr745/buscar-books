@@ -2,10 +2,10 @@ APIKEY = "AIzaSyCkOlGAGRa1NLiz6t0P22ioh1xbbeY2YCw"
 const $input = $("input")
 const $button = $("button")
 const $aside = $("aside")
+let $li = $("li")
 
 let books = []
-
-$button.on("click", () =>{
+$button.on("click", () => {
     let bookTitle = $input.val()
     $.ajax({
         url: `https://www.googleapis.com/books/v1/volumes?q=${bookTitle}:keyes&${APIKEY}`
@@ -15,7 +15,9 @@ $button.on("click", () =>{
         let items = $(data.items)
         let volumeInfo = $(data.volumeInfo)
         let title = $(data.title)
-        
+
+        // let books.length = 0;
+
         for(let i = 0; i < items.length; i++) {
             books.push(items[i])
             // console.log(books)
@@ -25,7 +27,6 @@ $button.on("click", () =>{
             $ul.append($li) 
             }
 
-        let $li = $("li")
 
         for(let i = 0; i < books.length; i++) {
             $(document).ready(function() {
@@ -51,10 +52,34 @@ $button.on("click", () =>{
                 if (books[index].volumeInfo.imageLinks.smallThumbnail == null) {
                     $aside.innerHTML = ""
                 }
+                
+            })
 
             })
-        })
-    }
+
+        }
+    })
+    
+const remove = (event) => {
+// const $target = $(event.$input)
+}
+
+$button.on("click", remove)
+$input.val("")
+let books.length = 0;
 })
-})
+
+// const clearArray = (books) => {
+// }
+
+// $button.on("click", remove)
+// // books.splice(0)
+// const onClick = books.location.reload();
+
+// function reload() {
+//     reload = location.reload();
+// }
+
+// $input.addEventListener("click", reload, false)
+// // })
 
