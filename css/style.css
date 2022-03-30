@@ -87,14 +87,12 @@ h2 {
   border: 2px white;
   border-radius: 25px;
   color:  black;
-  /* background: transparent; */
 
 }
 
 button {
   border: gray;
   color:  black;
-  /* background: transparent */
 }
 
 button:hover {
@@ -111,10 +109,7 @@ button:hover {
   align-items: center;
   align-content: center;
   border: transparent;
-  /* margin: 0px 0px 0px 0px;
-  padding: 0px; */
   border: transparent;
-  /* width: 300px; */
 }
 
 li{
@@ -146,7 +141,6 @@ li:hover {
   border: transparent;
   padding: 0px;
   margin: 0px;;
-  /* height: 40px; */
 }
 
 aside{
@@ -158,7 +152,6 @@ aside{
   align-items: center;
   align-content: center;
   border: transparent;
-  /* margin: 40px 950px 0px 0px;; */
 }
 
 #author{

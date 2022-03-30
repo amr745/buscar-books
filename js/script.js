@@ -1,6 +1,6 @@
 APIKEY = "AIzaSyCkOlGAGRa1NLiz6t0P22ioh1xbbeY2YCw"
 const $input = $("input")
-const $button = $("button")
+const $button = $(".butBox")
 const $aside = $("aside")
 let $li = $("li")
 
@@ -10,17 +10,14 @@ $button.on("click", () => {
     $.ajax({
         url: `https://www.googleapis.com/books/v1/volumes?q=${bookTitle}:keyes&${APIKEY}`
     }).then((data) => {
-        // console.log(data)
 
         let items = $(data.items)
         let volumeInfo = $(data.volumeInfo)
         let title = $(data.title)
 
-        // let books.length = 0;
 
         for(let i = 0; i < items.length; i++) {
             books.push(items[i])
-            // console.log(books)
             const $ul = $("ul")
             let $li = $("<li>")
             $li.text(items[i].volumeInfo.title)
@@ -61,25 +58,17 @@ $button.on("click", () => {
     })
     
 const remove = (event) => {
-// const $target = $(event.$input)
 }
 
-$button.on("click", remove)
-$input.val("")
-let books.length = 0;
-})
-
-// const clearArray = (books) => {
-// }
-
 // $button.on("click", remove)
-// // books.splice(0)
-// const onClick = books.location.reload();
+// $input.val("")
 
-// function reload() {
-//     reload = location.reload();
-// }
+// $(document).keypress(function() {
+//     books.length = 0;
+//     return books;
+// })
 
-// $input.addEventListener("click", reload, false)
-// // })
+// books = []
 
+
+})
