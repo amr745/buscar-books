@@ -12,8 +12,6 @@ body {
   margin: 0px;
   border: 0px;
   padding: 0px;
-  /* width: 100px; */
-  /* height: 40px; */
 }
 
 h1 {
@@ -41,11 +39,9 @@ h1 {
   align-content: center;
   flex: 0 1 auto;
   color: coral;
-  /* top: 10px */
   margin: 0px 50px 0px 50px;
   border: 0px 50px 0px 50px;
   padding: 0px 50px 0px 50px;
-  /* width: 100px; */
   height: 40px;
 }
 
@@ -63,21 +59,52 @@ h1 {
   height: 40px;
 }
 
-input {
-  /* flex: 0 1 auto; */
+#textBox {
   width: 75%;
-  padding: 12px 20px;
-  /* margin: 8px 0; */
+  padding: 5px 20px;
   box-sizing: content-box;
   border: 2px solid coral;
   border-radius: 25px;
-  /* background-color: lightgray; */
   color:  blueviolet;
-  /* transition: width 0.4s ease-in-out; */
   background: transparent; 
 }
 
-.butBox {
-  /* flex: 0 1 auto; */
-  /* float: right; */
+button {
+  border: 2px solid coral;
+  color:  blueviolet;
+  background: transparent
+}
+
+button:hover {
+  background-color: gray;
+  color: white;
+}
+
+#bookContainer{
+  position:relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 50px 50px 50px 50px;
+  border: 50px 50px 50px 50px;
+  padding: 50px 50px 50px 50px;
+  height: 45px;
+  /* width: 50pt; */
+
+}
+
+li{
+  list-style-type: none;
+}
+
+li::before {
+  content: "📚";;
+}
+
+li:hover {
+  background-color: gray;
+  color: white;
 }
