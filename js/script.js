@@ -60,8 +60,8 @@ $button.on("click", () => {
 const remove = (event) => {
 }
 
-// $button.on("click", remove)
-// $input.val("")
+$button.on("click", remove)
+$input.val("")
 
 // $(document).keypress(function() {
 //     books.length = 0;
