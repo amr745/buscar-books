@@ -20,64 +20,30 @@ header{
     url(https://media.istockphoto.com/photos/stack-of-colorful-books-education-background-back-to-school-book-picture-id690358116?k=20&m=690358116&s=170667a&w=0&h=nUxaOtHubGfrd_kTtszsqX8Mx2Qr3OXn94a-u2n4nXM=);
   background-size: cover; 
   height: 100vh;
-  /* text-align: center; */
-  /* position:relative; */
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   align-content: center;
-  /* margin: 0px 50px 0px 50px;
-  border: 0px 50px 0px 50px;
-  padding: 0px 50px 0px 50px; */
-  /* border: transparent; */
-  /* height: 500px; */
 }
 
 h1 {
   font-family: 'Cedarville Cursive', cursive;
   font-size: 50pt;
   display: flex;
-  /* margin: 0px 0px 0px 0px; */
   margin: 0px 0px 0px 0px;
   border: transparent;
-  /* height: 100px; */
-  /* display: flex; */
-  /* align-items: center; */
 }
 
 h2 {
-  /* position:relative; */
-  /* display: flex; */
-  /* flex-direction: row; */
-  /* flex-wrap: wrap; */
-  /* justify-content: center; */
-  /* align-items: center; */
-  /* align-content: center; */
-  /* flex: 0 1 auto; */
-  /* color: coral; */
-  /* margin: 0px 300px 0px 450px; */
   border: transparent;
-  /* padding: 0px; */
-  /* height: 50px; */
-  /* border: solid red; */
   margin: 0px 0px 0px 0px;
 }
 
 .userIn {
-  /* position:relative; */
   display: flex;
-  /* flex-direction: row; */
-  /* flex-wrap: wrap; */
-  /* justify-content: center; */
   align-items: center;
-  /* align-content: center; */
-  /* margin: 0px 50px 0px 50px; */
-  /* border: 0px 50px 0px 50px; */
-  /* padding: 0px 50px 0px 50px; */
-  /* height: 40px; */
-  /* border: transparent; */
 }
 
 #textBox {
