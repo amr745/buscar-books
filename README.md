@@ -11,11 +11,33 @@ A simple web application that displays information about books using the Google 
 * JAvaScript
 * jQuery
 * Google Fonts
-* jQuery Modal
 * Google Books API
 
 ---
 
-## Screenshot
+## Screenshots
 
-![](wireframe.png)
+![](images/wireframe.png)
+
+![](images/bb_top.png)
+
+![](images/bb_bottom.png)
+
+
+---
+
+## Getting Started
+
+[Click Here](https://amr745.github.io/buscar-books/) to see the deployed app!
+
+---
+
+## Future Enhancements
+
+* A way to refresh the list on the page without clicking the refresh button
+
+* A dropdown list instead of static list items
+
+* A second page that holds the returned information
+
+
