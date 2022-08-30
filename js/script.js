@@ -3,10 +3,14 @@ const $input = $("input")
 const $button = $(".butBox")
 const $aside = $("aside")
 let $li = $("li")
+const $ul = $("ul")
 
 let books = []
 $button.on("click", () => {
     let bookTitle = $input.val()
+    books.splice(0, books.length)
+    $ul.empty()
+    $('#box').hide()
     $.ajax({
         url: `https://www.googleapis.com/books/v1/volumes?q=${bookTitle}:keyes&${APIKEY}`
     }).then((data) => {
@@ -29,6 +33,7 @@ $button.on("click", () => {
             $(document).ready(function() {
             $('li').click(function() {
                 var index = $(this).index();
+                $('#box').show()
                
                 const one = document.querySelector('#title1')
                 one.innerHTML = `Title: ${books[index].volumeInfo.title}`;
@@ -62,13 +67,4 @@ const remove = (event) => {
 
 $button.on("click", remove)
 $input.val("")
-
-// $(document).keypress(function() {
-//     books.length = 0;
-//     return books;
-// })
-
-// books = []
-
-
 })
