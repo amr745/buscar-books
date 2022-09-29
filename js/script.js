@@ -7,10 +7,12 @@ const $ul = $("ul")
 
 let books = []
 $button.on("click", () => {
+    $("#bookContainer")[0].scrollIntoView({inline: "end"})
     let bookTitle = $input.val()
     books.splice(0, books.length)
     $ul.empty()
     $('#box').hide()
+
     $.ajax({
         url: `https://www.googleapis.com/books/v1/volumes?q=${bookTitle}:keyes&${APIKEY}`
     }).then((data) => {
@@ -34,9 +36,10 @@ $button.on("click", () => {
             $('li').click(function() {
                 var index = $(this).index();
                 $('#box').show()
+                $("#box")[0].scrollIntoView({behavior: 'smooth', inline: "end"})
                
-                const one = document.querySelector('#title1')
-                one.innerHTML = `Title: ${books[index].volumeInfo.title}`;
+                const $one = document.querySelector('#title1')
+                $one.html(`Title: ${books[index].volumeInfo.title}`);
 
                 const two = document.querySelector('#author')
                 two.innerHTML = `Author(s): ${books[index].volumeInfo.authors}`;
@@ -64,6 +67,10 @@ $button.on("click", () => {
     
 const remove = (event) => {
 }
+
+// function scrollWin() {
+//     window.scrollBy(0, 100);
+//   }
 
 $button.on("click", remove)
 $input.val("")
