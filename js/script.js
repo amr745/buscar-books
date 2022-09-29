@@ -39,7 +39,7 @@ $button.on("click", () => {
                 $("#box")[0].scrollIntoView({behavior: 'smooth', inline: "end"})
                
                 const $one = document.querySelector('#title1')
-                $one.html(`Title: ${books[index].volumeInfo.title}`);
+                $one.innerHTML = `Title: ${books[index].volumeInfo.title}`;
 
                 const two = document.querySelector('#author')
                 two.innerHTML = `Author(s): ${books[index].volumeInfo.authors}`;
