@@ -7,7 +7,7 @@ const $ul = $("ul")
 
 let books = []
 $button.on("click", () => {
-    $("#bookContainer")[0].scrollIntoView({ inline: 'end'})
+    $("#bookContainer")[0].scrollIntoView(true)
     let bookTitle = $input.val()
     books.splice(0, books.length)
     $ul.empty()
@@ -34,7 +34,7 @@ $button.on("click", () => {
             $('li').click(function() {
                 var index = $(this).index();
                 $('#box').show()
-                $("#box")[0].scrollIntoView({behavior: 'smooth', inline: "end"})
+                $("#box")[0].scrollIntoView({inline: "end"})
                
                 $('#title1').html(`Title: ${books[index].volumeInfo.title}`);
 
