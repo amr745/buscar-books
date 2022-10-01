@@ -5,6 +5,8 @@ const $aside = $("aside")
 let $li = $("li")
 const $ul = $("ul")
 
+$('#box').hide()
+
 let books = []
 $button.on("click", () => {
     let bookTitle = $input.val()
@@ -31,30 +33,38 @@ $button.on("click", () => {
 
         for(let i = 0; i < books.length; i++) {
             $(document).ready(function() {
-            $('li').click(function() {
-                var index = $(this).index();
-               
-                $('#title1').html(`Title: ${books[index].volumeInfo.title}`);
+                $('li').click(function() {
+                    // $('#box').show()
+                    var index = $(this).index();
+                    
+                    $('#title1').html(`Title: ${books[index].volumeInfo.title}`);
+                    
+                    if (`${books[index].volumeInfo.imageLinks.smallThumbnail}` !== undefined){
+                        $("#pic").html(`<img src=${books[index].volumeInfo.imageLinks.smallThumbnail}/>`)
+                        console.log("we have a picture")
+                    } else {
+                        $("#pic").html("<p>N/A</p>")
+                        console.log("empty")
+                    }
 
-                $("aside").html(`<img src=${books[index].volumeInfo.imageLinks.smallThumbnail}/>`)
-                // if (books[index].volumeInfo.imageLinks.smallThumbnail == null) {
-                //     $aside.innerHTML = ""
-                // }
-
-                $('#author').html(`Author(s): ${books[index].volumeInfo.authors}`);
+                    $('#author').html(`Author(s): ${books[index].volumeInfo.authors}`);
                 // if (books[index].volumeInfo.authors == null) {
                 //     two.innerHTML = ""
                 // }
 
-                $('#summary').html(`Book Info: ${books[index].volumeInfo.description}`);
+                    $('#summary').html(`Book Info: ${books[index].volumeInfo.description}`);
                 // if (books[index].volumeInfo.description == null) {
                 //     three.innerHTML = ""
                 // }
 
-                $('#box').show()
-                $("#box")[0].scrollIntoView({inline: "end"})
-            })
+                    // $("#box")[0].scrollIntoView({inline: "end"})
+                    
+                    $('#box').show()
 
+                    // $('#box')[0].scrollIntoView({inline: "end"})
+                    // $("#box")[0].scrollIntoView({inline: "end"})
+                    $("#box")[0].scrollIntoView($("#box")[0].scrollHeight)
+                })
             })
         }
     })

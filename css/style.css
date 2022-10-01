@@ -94,6 +94,7 @@ li:hover {
 
 #box{
   background-color: black;
+  /* scroll-padding: 20px; */
 }
 
 #title1{
@@ -110,7 +111,9 @@ li:hover {
   margin: 0px;;
 }
 
-aside{
+#pic{
+  height: 200px;
+  /* width: 500px; */
   position: relative;
   display: flex;
   flex-direction: row;
