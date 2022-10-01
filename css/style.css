@@ -5,7 +5,8 @@ html, body {
 body {
   font-family: 'Gentium Book Basic', serif;
   color: white;
-  background-color: rgb(20, 17, 17);
+  /* background-color: rgb(20, 17, 17); */
+  background-color: #231123;
   margin: 0px;
   border: 0px;
   padding: 0px;
@@ -93,7 +94,8 @@ li:hover {
 }
 
 #box{
-  background-color: black;
+  background-color: #e8db7d;
+  color: #231123;
   /* scroll-padding: 20px; */
 }
 
@@ -113,7 +115,6 @@ li:hover {
 
 #pic{
   height: 200px;
-  /* width: 500px; */
   position: relative;
   display: flex;
   flex-direction: row;

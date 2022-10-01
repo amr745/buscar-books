@@ -6,6 +6,7 @@ let $li = $("li")
 const $ul = $("ul")
 
 $('#box').hide()
+$('#bookContainer').hide()
 
 let books = []
 $button.on("click", () => {
@@ -28,6 +29,7 @@ $button.on("click", () => {
             let $li = $("<li>")
             $li.text(items[i].volumeInfo.title)
             $ul.append($li)
+            $('#bookContainer').show()
             $("#bookContainer")[0].scrollIntoView({inline: "end"})
             }
 
@@ -57,12 +59,8 @@ $button.on("click", () => {
                 //     three.innerHTML = ""
                 // }
 
-                    // $("#box")[0].scrollIntoView({inline: "end"})
                     
                     $('#box').show()
-
-                    // $('#box')[0].scrollIntoView({inline: "end"})
-                    // $("#box")[0].scrollIntoView({inline: "end"})
                     $("#box")[0].scrollIntoView($("#box")[0].scrollHeight)
                 })
             })
