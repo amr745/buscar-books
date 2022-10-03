@@ -1,4 +1,4 @@
-let APIKEY = config.APIKEY
+APIKEY = "AIzaSyCkOlGAGRa1NLiz6t0P22ioh1xbbeY2YCw"
 const $input = $("input")
 const $button = $(".butBox")
 const $aside = $("aside")
