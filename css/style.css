@@ -91,6 +91,8 @@ li::before {
 li:hover {
   background-color: gray;
   color: white;
+  cursor: pointer;
+
 }
 
 #box{
