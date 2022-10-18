@@ -27,6 +27,15 @@ A simple web application that displays information about books using the Google 
 
 ![](images/bb_bottom.png)
 
+---
+
+## User Stories
+
+### As a user, I want to:
+* type the name of a book into a search box and click search.
+* see a list of books. 
+* click on a book title. 
+* see information about the book.
 
 ---
 
