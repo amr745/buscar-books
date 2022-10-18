@@ -8,7 +8,7 @@ A simple web application that displays information about books using the Google 
 
 * HTML5
 * CSS3
-* JAvaScript
+* JavaScript
 * jQuery
 * Google Fonts
 * Google Books API
@@ -38,10 +38,8 @@ A simple web application that displays information about books using the Google 
 
 ## Future Enhancements
 
-* A way to refresh the list on the page without clicking the refresh button
-
 * A dropdown list instead of static list items
 
-* A second page that holds the returned information
+* A show page that holds the returned book information
 
-
+* Conditional statements that return undefined when no information is available
