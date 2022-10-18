@@ -19,6 +19,8 @@ A simple web application that displays information about books using the Google 
 
 ![](images/wireframe.png)
 
+---
+
 ## Screenshots of Deployed App
 
 ![](images/bb_top.png)
