@@ -33,7 +33,7 @@ A simple web application that displays information about books using the Google 
 
 ### As a user, I want to:
 * type the name of a book into a search box.
-* click a search button
+* click a search button.
 * see a list of books. 
 * click on a book title. 
 * see information about the book.
